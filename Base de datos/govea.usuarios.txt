@@ -1,0 +1,13 @@
+CREATE USER 'ecgovea'@'localhost' IDENTIFIED BY 'Aa12356790';
+GRANT ALL PRIVILEGES ON govea.* TO 'ecgovea'@'localhost';
+FLUSH PRIVILEGES;
+
+CREATE DATABASE govea;
+
+CREATE TABLE govea.usuarios (
+    id BIGINT PRIMARY KEY auto_increment,
+    nombre VARCHAR(100),
+    email VARCHAR(100)
+); 
+
+select * from govea.usuarios;
